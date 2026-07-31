@@ -472,7 +472,7 @@ Now analyze the following experiment and generate the ideas:
 [PASTE EXPERIMENT DETAILS AND RESULTS HERE]`;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-purple-100 to-purple-200 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 p-8">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold mb-1">🚀 DAE Intelligence Hub</h1>
         <p className="text-gray-600 mb-4">
@@ -494,7 +494,7 @@ Now analyze the following experiment and generate the ideas:
                   onClick={() => setMarket(m)}
                   className={`px-3 py-1 rounded-full text-sm border transition ${
                     market === m
-                      ? "bg-purple-600 text-white border-purple-600"
+                      ? "bg-blue-600 text-white border-blue-600"
                       : "bg-white text-gray-600 border-gray-200 hover:bg-gray-100"
                   }`}
                 >
@@ -517,7 +517,7 @@ Now analyze the following experiment and generate the ideas:
                   onClick={() => setYear(y)}
                   className={`px-3 py-1 rounded-full text-sm border transition ${
                     year === y
-                      ? "bg-purple-600 text-white border-purple-600"
+                      ? "bg-blue-600 text-white border-blue-600"
                       : "bg-white text-gray-600 border-gray-200 hover:bg-gray-100"
                   }`}
                 >
@@ -540,7 +540,7 @@ Now analyze the following experiment and generate the ideas:
                   onClick={() => setTag(t)}
                   className={`px-3 py-1 rounded-full text-sm border transition ${
                     tag === t
-                      ? "bg-purple-600 text-white border-purple-600"
+                      ? "bg-blue-600 text-white border-blue-600"
                       : "bg-white text-gray-600 border-gray-200 hover:bg-gray-100"
                   }`}
                 >
@@ -561,13 +561,13 @@ Now analyze the following experiment and generate the ideas:
             {filtered.map((exp, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.02] hover:ring-1 hover:ring-purple-300 transition-all duration-200 cursor-pointer relative overflow-hidden"
+                className="bg-white rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.02] hover:ring-1 hover:ring-blue-300 transition-all duration-200 cursor-pointer relative overflow-hidden"
                 onClick={() => setSelected(exp)}
               >
-                <div className="h-1 bg-gradient-to-r from-purple-400 to-indigo-500" />
+                <div className="h-1 bg-gradient-to-r from-blue-400 to-indigo-500" />
 
                 <div className="p-5">
-                  <div className="absolute top-3 right-3 bg-purple-600 text-white text-xs px-2 py-1 rounded-md">
+                  <div className="absolute top-3 right-3 bg-blue-600 text-white text-xs px-2 py-1 rounded-md">
                     {getMarketTag(exp.market)}
                   </div>
 
@@ -585,7 +585,7 @@ Now analyze the following experiment and generate the ideas:
                     {exp.tags?.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="text-[10px] px-2 py-0.5 rounded-full bg-purple-100 text-purple-700"
+                        className="text-[10px] px-2 py-0.5 rounded-full bg-blue-100 text-blue-700"
                       >
                         {tag}
                       </span>
@@ -613,7 +613,7 @@ Now analyze the following experiment and generate the ideas:
                     {selected.tags?.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="text-[10px] px-2 py-0.5 rounded-full bg-purple-100 text-purple-700"
+                        className="text-[10px] px-2 py-0.5 rounded-full bg-blue-100 text-blue-700"
                       >
                         {tag}
                       </span>
@@ -648,7 +648,7 @@ Now analyze the following experiment and generate the ideas:
                   <p className="text-xs uppercase text-gray-400 mb-1">Links</p>
                   <a
                     href={selected.jira}
-                    className="text-purple-600 underline"
+                    className="text-blue-600 underline"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -660,7 +660,7 @@ Now analyze the following experiment and generate the ideas:
               <div className="mt-6 flex gap-3">
                 <button
                   onClick={(e) => copyFullPromptWithExperiment(selected, e)}
-                  className="px-5 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-90 text-white rounded-lg shadow-md transition"
+                  className="px-5 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:opacity-90 text-white rounded-lg shadow-md transition"
                 >
                   {copiedId === `${selected.pc}-full`
                     ? "Copied ✓"
@@ -692,7 +692,7 @@ Now analyze the following experiment and generate the ideas:
               setPromptCopied(success ? true : "failed");
               setTimeout(() => setPromptCopied(false), 1800);
             }}
-            className="mt-3 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition"
+            className="mt-3 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition"
           >
             {promptCopied === true
               ? "Copied ✓"

@@ -17,8 +17,7 @@ export default function ({ loggedIn }) {
   }, [password]);
 
   return (
-    //min-h-screen bg-gradient-to-br from-purple-50 via-purple-100 to-purple-200 p-8
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-purple-100 to-purple-200 p-6 flex items-start justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 p-6 flex items-start justify-center">
       <div className="w-full max-w-3xl bg-white rounded-2xl shadow-2xl p-6">
         <header className="mb-4">
           <h1 className="font-bold text-gray-800 flex items-center gap-3">
@@ -38,7 +37,7 @@ export default function ({ loggedIn }) {
           />
           <button
             onClick={submitClickHandler}
-            className="w-full p-3 bg-purple-600 text-white font-bold border-gray-200 border rounded-md"
+            className="w-full p-3 bg-blue-600 text-white font-bold border-gray-200 border rounded-md"
           >
             Submit
           </button>

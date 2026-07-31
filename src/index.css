@@ -54,7 +54,7 @@
 
 body {
   margin: 0;
-  background-color: #e9d4ff;
+  background-color: var(--color-blue-200);
 }
 
 #root {
